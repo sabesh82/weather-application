@@ -1,0 +1,142 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url("assets/weather2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  width:350px;
+  padding: 20px;
+  background-color: rgb(53, 59, 88);
+  border-radius: 8px;
+  border: 3px solid blue;
+
+}
+
+.input-container{
+  width:100%;
+  display: flex;
+  align-items: center;
+  border: 2px solid lightblue;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.cityInput{
+  flex:1;
+  height:30px;
+  border:none;
+  font-size: 16px;
+  outline:none;
+  padding: 10px;
+}
+
+.search-icon{
+  padding: 2px;
+  cursor: pointer;
+}
+
+.search-icon:hover{
+  background-color:rgb(39, 30, 127);
+}
+
+.search-icon:active{
+  background-color:rgb(51, 37, 173);
+}
+
+.search-icon img{
+  object-fit: contain;
+}
+
+.image{
+  text-align: center;
+  height:150px;
+  margin-bottom: 10px;
+}
+
+.image img{
+  width: 160px;
+  height: 160px;
+}
+
+.temp, .city, .country{
+  font-size: 35px;
+  color: hsl(0, 1%, 36%);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.temp{
+  font-weight: 500;
+  color:whitesmoke;
+}
+
+.city{
+  color: rgb(255, 136, 0);
+  font-family: 400;
+  font-size: 40px;
+}
+
+.country{
+  font-size: 18px;
+  color: #adabab;
+  font-weight: 1000;
+}
+
+.cooordination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:10px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.cooordination div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:10px;
+}
+
+.cooordination div span{
+  font-size: 14px;
+}
+
+.cooordination div span:nth-child(2){
+  font-size: 18px;
+  font-weight: bold;
+  color:#b3b3b3;
+  padding-top: 5px;
+}
+
+.data-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.element{
+  text-align: center;
+}
+
+.humidity-persent,
+.wind-persent{
+  font-size: 18px;
+  font-weight: bold;
+  color:#ababab;
+  padding-top: 5px;
+}
+
+.text{
+  font-size: 12px;
+  color:#ababab;
+}
